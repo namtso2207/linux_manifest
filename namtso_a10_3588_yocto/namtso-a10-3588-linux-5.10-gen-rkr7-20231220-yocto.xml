@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <remote fetch="." name="github"/>
+  <default remote="github" revision="namtso-a10-3588-linux-5.10-gen-rkr7_20231220" sync-j="4"/>
+  
+  <project name="linux_app_lvgl_demo" path="app/lvgl_demo"/>
+  <project name="linux_app_rkadk" path="app/rkadk"/>
+  <project name="linux_bsp_docs" path="docs" revision="docs_parent_20231220"/>
+  <project name="linux_bsp_docs" path="docs/cn" revision="docs_cn_20231220">
+        <linkfile dest="docs/cn/RK3588/Rockchip_Developer_Guide_Linux_Software_CN.pdf" src="Rockchip_Developer_Guide_Linux_Software_CN.pdf"/>
+  </project>
+  <project name="linux_bsp_docs" path="docs/en" revision="docs_en_20231220"/>
+  <project name="linux_bsp_internal_doc" path="docs/cn/RK3588" revision="rk3588-cn-20231220"/>
+  <project name="linux_bsp_internal_doc" path="docs/en/RK3588" revision="rk3588-en-20231220"/>
+  <project name="linux_debian" path="debian"/>
+  <project name="linux_device_rockchip" path="device/rockchip">
+      <linkfile src="common/scripts/build.sh" dest="build.sh"/>
+      <linkfile src="common/Makefile" dest="Makefile"/>
+      <linkfile src="common/scripts/rkflash.sh" dest="rkflash.sh"/>
+  </project>
+  <project name="linux_drm-cursor" path="external/drm-cursor"/>
+  <project name="linux_external-rkscript" path="external/rkscript"/>
+  <project name="linux_external_alsa-config" path="external/alsa-config"/>
+  <project name="linux_external_chromium" path="external/chromium"/>
+  <project name="linux_external_common_algorithm" path="external/common_algorithm"/>
+  <project name="linux_external_rk_pcba_test" path="external/rk_pcba_test"/>
+  <project name="linux_external_rktoolkit" path="external/rktoolkit"/>
+  <project name="linux_external_rkupdate" path="external/rkupdate"/>
+  <project name="linux_external_rkwifibt" path="external/rkwifibt"/>
+  <project name="linux_external_rkwifibt-app" path="external/rkwifibt-app"/>
+  <project name="linux_external_security_bin" path="external/security/bin"/>
+  <project name="linux_gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu" path="prebuilts/gcc/linux-x86/aarch64/gcc-arm-10.3-2021.07-x86_64-aarch64-none-linux-gnu"/>
+  <project name="linux_gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-10.3-2021.07-x86_64-arm-none-linux-gnueabihf"/>
+  <project name="linux_gstreamer-rockchip" path="external/gstreamer-rockchip"/>
+  <project name="linux_librkcrypto" path="external/security/librkcrypto"/>
+  <project name="linux" path="kernel" revision="namtso-a10-3588-5.10.y"/>
+  <project name="linux_rga" path="external/linux-rga"/>
+  <project name="linux_meta-rockchip" path="yocto/meta-rockchip"/>
+  <project name="linux_recovery" path="external/recovery"/>
+  <project name="linux_rk_mpp" path="external/mpp"/>
+  <project name="linux_dpdk" path="external/dpdk"/>
+  <project name="linux_rk_tee_user" path="external/security/rk_tee_user"/>
+  <project name="linux_rkbin" path="rkbin"/>
+  <project name="linux_rknn-toolkit2" path="external/rknn-toolkit2"/>
+  <project name="linux_rknpu2" path="external/rknpu2"/>
+  <project name="linux_rockchip-test" path="external/rockchip-test"/>
+  <project name="linux_rockit" path="external/rockit"/>
+  <project name="linux_uvc_app" path="external/uvc_app"/>
+  <project name="linux_uac_app" path="external/uac_app"/>
+  <project name="linux_uefi-monorepo" path="uefi"/>
+  <project name="linux_xserver" path="external/xserver"/>
+  <project name="linux_yocto_build_conf" path="yocto/build/conf"/>
+  <project name="linux_yocto_poky_rel" path="yocto/meta-browser" revision="namtso-a10-3588-linux-5.10-gen-meta-browser-rkr7_20231220"/>
+  <project name="linux_yocto_poky_rel" path="yocto/meta-clang" revision="namtso-a10-3588-linux-5.10-gen-meta-clang-rkr7_20231220"/>
+  <project name="linux_yocto_poky_rel" path="yocto/meta-openembedded" revision="namtso-a10-3588-linux-5.10-gen-meta-openembedded-rkr7_20231220"/>
+  <project name="linux_yocto_poky_rel" path="yocto/meta-qt5" revision="namtso-a10-3588-linux-5.10-gen-meta-qt5-rkr7_20231220"/>
+  <project name="linux_yocto_poky_rel" path="yocto/poky" revision="namtso-a10-3588-linux-5.10-gen-poky-rkr7_20231220">
+      <linkfile src="scripts" dest="yocto/scripts"/>
+      <linkfile src="bitbake" dest="yocto/bitbake"/>
+      <linkfile src="meta-poky" dest="yocto/meta-poky"/>
+      <linkfile src=".templateconf" dest="yocto/.templateconf"/>
+      <linkfile src="oe-init-build-env" dest="yocto/oe-init-build-env"/>
+  </project>
+  <project name="linux_buildroot" path="buildroot">
+        <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
+  </project>
+  <project name="u-boot" path="u-boot" revision="namtso-a10-3588-v2017.09"/>
+
+  <remote fetch="https://gitlab.com/namtso/" name="gitlab"/>
+  <project name="external_camera_engine_rkaiq" path="external/camera_engine_rkaiq" remote="gitlab"/>
+  <project name="tools" path="tools" remote="gitlab"/>
+  <project name="libmali" path="external/libmali" remote="gitlab"/>
+  
+</manifest>
+
