@@ -66,11 +66,11 @@
         <linkfile src="build/envsetup.sh" dest="envsetup.sh"/>
   </project>
   <project name="u-boot" path="u-boot" revision="namtso-a10-3588-v2017.09"/>
+  <project name="linux_ubuntu" path="ubuntu"/>
 
-  <remote fetch="https://gitlab.com/namtso/" name="gitlab"/>
-  <project name="external_camera_engine_rkaiq" path="external/camera_engine_rkaiq" remote="gitlab"/>
-  <project name="tools" path="tools" remote="gitlab"/>
-  <project name="libmali" path="external/libmali" remote="gitlab"/>
+  <project name="linux_external_camera_engine_rkaiq" path="external/camera_engine_rkaiq"/>
+  <project name="linux_tools" path="tools"/>
+  <project name="linux_libmali" path="external/libmali"/>
   
 </manifest>
 
